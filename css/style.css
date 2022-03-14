@@ -1,0 +1,141 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#container {
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  position: relative;
+  border: 1px solid red;
+  overflow: hidden;
+  background-color: darkcyan;
+}
+
+#score_help {
+  text-align: center;
+  font-size: 25px;
+  background-color: #eaeaea;
+}
+
+#branch {
+  position: absolute;
+  height: 2%;
+  width: 100%;
+  background-color: #7b2e00;
+  top: 23%;
+}
+
+.tree {
+  position: absolute;
+  height: 15%;
+  width: 8%;
+  top: 10%;
+  background: url("/content/images/tree.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+#tree1 {
+  left: 20%;
+}
+
+#tree2 {
+  left: 40%;
+}
+
+#tree3 {
+  left: 60%;
+}
+
+.apple {
+  position: absolute;
+  top: 18%;
+  height: 5%;
+  width: 2%;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+#apple1 {
+  left: calc(20% + 8% / 2 - 2% / 2);
+}
+
+#apple2 {
+  left: calc(40% + 8% / 2 - 2% / 2);
+}
+
+#apple3 {
+  left: calc(60% + 8% / 2 - 2% / 2);
+}
+
+.fallen {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  height: 7%;
+  width: 7%;
+  background: url("/content/images/fallenApple.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+
+#fallen1 {
+  left: calc(20% + 8% / 2 - 7% / 2);
+}
+
+#fallen2 {
+  left: calc(40% + 8% / 2 - 7% / 2);
+}
+
+#fallen3 {
+  left: calc(60% + 8% / 2 - 7% / 2);
+}
+
+#floor {
+  position: absolute;
+  height: 7%;
+  width: 100%;
+  background-color: #7b2e00;
+  bottom: 0;
+  z-index: 10;
+}
+
+#basket {
+  height: 100px;
+  width: 85px;
+  position: absolute;
+  bottom: 5px;
+  background: url("/content/images/basketWithApples.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  z-index: 11;
+}
+
+#score2 {
+  position: absolute;
+  color: #424242;
+  font-size: 30px;
+  top: 45%;
+  left: 30%;
+}
+
+#restart {
+  border: 0;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  background-color: #7b2e00;
+  color: white;
+  top: 40%;
+  font-size: 35px;
+  display: none;
+  cursor: pointer;
+}

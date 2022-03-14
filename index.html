@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+        <title>Apple Picker</title>
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div id="container">
+            
+            <div id="score_help"> 
+                <div id="select-game-mode">
+                    <span>Select a Game Mode to start</span>
+                    
+                    <input type="radio" id="easy" name="game-mode" value="1" >
+                    <label for="easy">Easy</label>
+
+                    <input type="radio" id="medium" name="game-mode" value="2" checked>
+                    <label for="medium">Medium</label>
+
+                    <input type="radio" id="hard" name="game-mode" value="3">
+                    <label for="hard">Hard</label>
+                    <br>
+                    <button onclick="startGame()" >Start</button>
+                </div>
+                Your Score:
+            <span id="score">0</span> | Health :
+            <span id="life"></span> | Move your mouse to control the basket
+            <span><button onclick="showHighScores()">Show High Scores</button></span>
+            </div>
+
+            <div id="branch"></div>
+
+            <div id="tree1" class="tree"></div>
+            <div id="tree2" class="tree"></div>
+            <div id="tree3" class="tree"></div>
+
+            <img id="apple1" class="apple" data-fallen='1' src="content/images/apple.png" />
+            <img id="apple2" class="apple" data-fallen='2' src="content/images/apple.png" />
+            <img id="apple3" class="apple" data-fallen='3' src="content/images/apple.png" />>
+
+            <div id="fallen1" class="fallen"></div>
+            <div id="fallen2" class="fallen"></div>
+            <div id="fallen3" class="fallen"></div>
+
+            <div id="basket">
+            <span id="score2"></span>
+            </div>
+
+            <div id="floor"></div>
+
+            <button id="restart">Restart</button>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <script src="js/fall.js"></script>
+        <script src="js/variables.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
