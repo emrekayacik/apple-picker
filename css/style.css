@@ -35,7 +35,7 @@ body {
   height: 15%;
   width: 8%;
   top: 10%;
-  background: url("/content/images/tree.png");
+  background: url("../content/images/tree.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 100;
@@ -80,7 +80,7 @@ body {
   bottom: 0px;
   height: 7%;
   width: 7%;
-  background: url("/content/images/fallenApple.png");
+  background: url("../content/images/fallenApple.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 11;
@@ -112,7 +112,7 @@ body {
   width: 85px;
   position: absolute;
   bottom: 5px;
-  background: url("/content/images/basketWithApples.png");
+  background: url("../content/images/basketWithApples.png");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
